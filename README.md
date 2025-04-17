@@ -18,7 +18,7 @@ Automatically generates and posts a daily report of active SF Hub projects and t
    ```
 3. Create a `.env` file with the following variables:
    ```
-   AIRTABLE_API_KEY=your_api_key
+   AIRTABLE_PERSONAL_ACCESS_TOKEN=your_pat_token
    AIRTABLE_BASE_ID=your_base_id
    SLACK_BOT_TOKEN=your_bot_token
    SLACK_CHANNEL_ID=your_channel_id
@@ -33,7 +33,7 @@ Automatically generates and posts a daily report of active SF Hub projects and t
 The script is configured to run automatically via GitHub Actions. To set this up:
 
 1. Add the following secrets to your GitHub repository:
-   - `AIRTABLE_API_KEY`
+   - `AIRTABLE_PERSONAL_ACCESS_TOKEN`
    - `AIRTABLE_BASE_ID`
    - `SLACK_BOT_TOKEN`
    - `SLACK_CHANNEL_ID`
